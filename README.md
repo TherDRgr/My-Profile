@@ -1,4 +1,4 @@
 # About-me
-One Code Camp Day 3 HTML Practice
+One Code Camp Day 4 CSS Practice
 
 ![preview](preview.png)
