@@ -20,16 +20,35 @@ html {
   font-family: 'Poppins';
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: #20131a;
   background-image: url(texture.png);
-  background-repeat: repeat; 
+  background-repeat: repeat;
+  color: #fff;
+  opacity: 0.8;
 }
+
+/* HEADER */
 
 .header {
   background-color: var(--black);
   color: #fff;
-  padding-top: 160px;
+  padding-top: 100px;
   margin: 0px 370px;
 }
 
@@ -65,7 +84,7 @@ opacity: 0.8;
   border-right-style: none;
 }
 
-/* about me */
+/* ABOUT ME */
 
 #image {
   width: 35%;
@@ -105,7 +124,21 @@ margin: 0.5em;
   opacity: 0.8;
 }
 
-@media (max-width:1024px){
+/* BODY */
+
+.Hobbies {
+  margin: 2em 3em;
+}
+
+.Hobbies h1 {
+  margin: 0 1em;
+  color: #66cb9a;
+}
+
+
+/* MEDIA TABLET SETTINGS */
+
+@media (min-width:1024px) and (max-width:1919px){
 
   .header {
     padding-top: 20px;
@@ -124,8 +157,8 @@ margin: 0.5em;
   .main p{
       text-align: justify;
       padding-top: 1em;
-      font-size: 0.5em;
-      margin-right: 10%;
+      font-size: 1em;
+      margin-right: 0px;
     }
     
   #image {
@@ -133,15 +166,73 @@ margin: 0.5em;
       width: 60%;
       height: auto;
     }
+    .about-me-description h2{
+      opacity: 0.8;
+      font-size: 2em;
+    }
 }
 
-@media (max-width:430px) {
+/* MEDIA PHONE SETTINGS*/
+
+@media (min-width:362px) and (max-width:1023px){
+
   .header {
-    padding-top: 0px;
-    margin: 0px 0px;
+    padding-top: 10px;
+    margin: 0px 20px;
   }
+
   .main h1{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 2.5em;
+    }
+
+  .main h4{
+      font-size: 1em;
+      padding-bottom: 0.5em;
+    }
+
+  .main h3{
+      font-size: 0.75em;
+    }
+
+  .main p{
+      text-align: justify;
+      padding-top: 1em;
+      font-size: 0.75em;
+      margin-right: 0px;
+    }
+    
+  #image {
+      align-self: center;
+      width: 50%;
+      height: auto;
+      margin-bottom: 2em;
+    }
+
+  .about-me{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .about-me-description {
+      font-size: 0.7em;
+      color: #fff;
+      place-self: center;
+    }
+    
+    .about-me-description ul{
+    font-size: 1.5em;
+    color: #66cb9a;
+    margin: 0.5em;
+    }
+    
+    .about-me-description li{
+      font-size: 1em;
+      color: #929798;
+    }
+    
+    .about-me-description h2{
+      opacity: 0.8;
+      font-size: 2em;
     }
 }
